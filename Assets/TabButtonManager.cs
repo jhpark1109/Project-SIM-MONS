@@ -31,6 +31,7 @@ public class TabButtonManager : MonoBehaviour
         }
         if(innerTabflag && transform.childCount != 0 ){
             transform.GetChild(0).GetComponent<TabButton>().Select();
+            tabButton = transform.GetChild(0).GetComponent<TabButton>();
         }
     }
 

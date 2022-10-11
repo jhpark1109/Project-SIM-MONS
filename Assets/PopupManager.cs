@@ -14,7 +14,7 @@ public class PopupManager : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
     }
     public void OnDrag(PointerEventData eventData){
         //thisUI.transform.position = eventData.position;
-        thisUI.transform.position += (Vector3)(eventData.delta);
+        thisUI.transform.position += (Vector3)(eventData.delta) * 0.01f;//임시방편
     }
 
     public void OnEndDrag(PointerEventData eventData){
